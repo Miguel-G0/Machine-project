@@ -1,13 +1,22 @@
 public class Tiles {
     private String tileName;
     private boolean canWalk;
-    private boolean canKill;
+    private boolean occupied;
+    private char sign;
 
 
-    public Tiles(String tileName, boolean canWalk,boolean canKill){
+    public char getsign(){
+		return sign;
+	}
+	
+	public void occupy(){
+        occupied = true;
+		sign = 'c';
+    }
+    public Tiles(String tileName, boolean canWalk){
         this.tileName = tileName;
         this.canWalk = canWalk;
-        this.canKill = canKill;
+        occupied = false;
     }
 
     public String getTileName() {
@@ -20,3 +29,4 @@ public class Tiles {
         return canKill;
     }
 }
+
