@@ -1,5 +1,7 @@
 public class WaterTile extends Tiles {
     WaterTile(String tileName){
-        super(tileName, true, true);
+        super(tileName, true);
+        sign = '~';
     }
+
 }
