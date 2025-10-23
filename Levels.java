@@ -2,19 +2,19 @@ import java.util.*;
 
 public class Levels{
 
-private ArrayList<Tiles> Map;
+private Tile[][] Map;
 private Player Chip;
 private int CollectChips;
 private boolean Complete;
 private int XArea;
 private int YArea;
 
-public Levvel(int Xarea, int Yarea, int CollectChips){
+public Levels(int Xarea, int Yarea, int CollectChips){
     this.XArea = Xarea;
     this.YArea = Yarea;
     this.CollectChips = CollectChips;
     this.Complete = false;
-    this.Map = new ArrayList<Tiles>();
+    this.Map = new Tile[Xarea][Yarea];
     CreateMap():
 }
 
@@ -66,3 +66,4 @@ public boolean Movement(String WASD){
 
 
 }
+
